@@ -3,51 +3,53 @@ Materi Pembelajaran Tailwind CSS. Sumber Channel Yotube WPU.<br>
 https://www.youtube.com/playlist?list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h<br>
 
 
-## 1. Instalasi & Konfigurasi Tailwind CSS
+### 1. Instalasi & Konfigurasi Tailwind CSS
 https://tailwindcss.com/docs/installation<br>
-Install Tailwind CSS<br>
-Install tailwindcss via npm, and create your tailwind.config.js file.<br>
 
-    npm install -D tailwindcss<br>
-    npx tailwindcss init
+### 2. Basic Utility
+https://tailwindcss.com/docs/utility-first<br>
 
-Configure your template paths<br>
-Add the paths to all of your template files in your tailwind.config.js file.<br>
+### 3. Pseudo-class & Dark Mode
+https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes<br>
+https://tailwindcss.com/docs/dark-mode<br>
 
-    /** @type {import('tailwindcss').Config} */
-    module.exports = {
-      content: ["./src/**/*.{html,js}"],
-      theme: {
-        extend: {},
-      },
-      plugins: [],
-    }
+### 4. Transform, Transition, Animation
+#### - Transform
+https://tailwindcss.com/docs/scale<br>
+https://tailwindcss.com/docs/rotate<br>
+https://tailwindcss.com/docs/translate<br>
+https://tailwindcss.com/docs/skew<br>
+https://tailwindcss.com/docs/transform-origin<br>
+#### - Transition
+https://tailwindcss.com/docs/transition-property<br>
+https://tailwindcss.com/docs/transition-duration<br>
+https://tailwindcss.com/docs/transition-timing-function<br>
+https://tailwindcss.com/docs/transition-delay<br>
+#### - Animation
+https://tailwindcss.com/docs/animation<br>
 
-Add the Tailwind directives to your CSS<br>
-Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.<br>
+### 5. Layouting
+https://tailwindcss.com/docs/aspect-ratio<br>
+https://tailwindcss.com/docs/container<br>
+https://tailwindcss.com/docs/columns<br>
+https://tailwindcss.com/docs/box-sizing<br>
+https://tailwindcss.com/docs/display<br>
+https://tailwindcss.com/docs/float<br>
+https://tailwindcss.com/docs/object-fit<br>
+https://tailwindcss.com/docs/object-position<br>
+https://tailwindcss.com/docs/overflow<br>
+https://tailwindcss.com/docs/position<br>
+https://tailwindcss.com/docs/top-right-bottom-left<br>
+https://tailwindcss.com/docs/z-index<br>
 
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-    
-Start the Tailwind CLI build process<br>
-Run the CLI tool to scan your template files for classes and build your CSS.<br>
+### 6. Responsive Design
+https://tailwindcss.com/docs/responsive-design<br>
 
-    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+### 7. Flexbox
+https://tailwindcss.com/docs/flex<br>
 
-Start using Tailwind in your HTML<br>
-Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content.<br>
+### 8. Grid
+https://tailwindcss.com/docs/grid-row<br>
 
-    <!doctype html>
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="/dist/output.css" rel="stylesheet">
-    </head>
-    <body>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </body>
-    </html>
+### 9. Functions & Directives
+https://tailwindcss.com/docs/functions-and-directives<br>
